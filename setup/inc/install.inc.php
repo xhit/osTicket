@@ -55,12 +55,6 @@ $info=($_POST && $errors)?Format::htmlchars($_POST):array('prefix'=>'ost_','dbho
                     <font class="error"><?php echo $errors['lname']; ?></font>
                 </div>
                 <div class="row">
-                    <label><?php echo __('Email Address');?>:</label>
-                    <input type="text" name="admin_email" size="45" tabindex="5" value="<?php echo $info['admin_email']; ?>">
-                    <a class="tip" href="#email"><i class="icon-question-sign help-tip"></i></a>
-                    <font class="error"><?php echo $errors['admin_email']; ?></font>
-                </div>
-                <div class="row">
                     <label><?php echo __('Username');?>:</label>
                     <input type="text" name="username" size="45" tabindex="6" value="<?php echo $info['username']; ?>" autocomplete="off">
                     <a class="tip" href="#username"><i class="icon-question-sign help-tip"></i></a>
@@ -79,38 +73,6 @@ $info=($_POST && $errors)?Format::htmlchars($_POST):array('prefix'=>'ost_','dbho
                     <font class="error"><?php echo $errors['passwd2']; ?></font>
                 </div>
 
-                <h4 class="head database"><?php echo __('Database Settings');?></h4>
-                <span class="subhead"><?php echo __('Database connection information');?> <font class="error"><?php echo $errors['db']; ?></font></span>
-                <div class="row">
-                    <label><?php echo __('MySQL Table Prefix');?>:</label>
-                    <input type="text" name="prefix" size="45" tabindex="9" value="<?php echo $info['prefix']; ?>">
-                    <a class="tip" href="#db_prefix"><i class="icon-question-sign help-tip"></i></a>
-                    <font class="error"><?php echo $errors['prefix']; ?></font>
-                </div>
-                <div class="row">
-                    <label><?php echo __('MySQL Hostname');?>:</label>
-                    <input type="text" name="dbhost" size="45" tabindex="10" value="<?php echo $info['dbhost']; ?>">
-                    <a class="tip" href="#db_host"><i class="icon-question-sign help-tip"></i></a>
-                    <font class="error"><?php echo $errors['dbhost']; ?></font>
-                </div>
-                <div class="row">
-                    <label><?php echo __('MySQL Database');?>:</label>
-                    <input type="text" name="dbname" size="45" tabindex="11" value="<?php echo $info['dbname']; ?>">
-                    <a class="tip" href="#db_schema"><i class="icon-question-sign help-tip"></i></a>
-                    <font class="error"><?php echo $errors['dbname']; ?></font>
-                </div>
-                <div class="row">
-                    <label><?php echo __('MySQL Username');?>:</label>
-                    <input type="text" name="dbuser" size="45" tabindex="12" value="<?php echo $info['dbuser']; ?>">
-                    <a class="tip" href="#db_user"><i class="icon-question-sign help-tip"></i></a>
-                    <font class="error"><?php echo $errors['dbuser']; ?></font>
-                </div>
-                <div class="row">
-                    <label><?php echo __('MySQL Password');?>:</label>
-                    <input type="password" name="dbpass" size="45" tabindex="13" value="<?php echo $info['dbpass']; ?>">
-                    <a class="tip" href="#db_password"><i class="icon-question-sign help-tip"></i></a>
-                    <font class="error"><?php echo $errors['dbpass']; ?></font>
-                </div>
                 <br>
                 <div id="bar">
                     <input class="btn" type="submit" value="<?php echo __('Install Now');?>" tabindex="14">

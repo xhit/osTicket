@@ -51,17 +51,19 @@ class Installer extends SetupWizard {
         $f['email']         = array('type'=>'email',    'required'=>1, 'error'=>__('Valid email required'));
         $f['fname']         = array('type'=>'string',   'required'=>1, 'error'=>__('First name required'));
         $f['lname']         = array('type'=>'string',   'required'=>1, 'error'=>__('Last name required'));
-        $f['admin_email']   = array('type'=>'email',    'required'=>1, 'error'=>__('Valid email required'));
         $f['username']      = array('type'=>'username', 'required'=>1, 'error'=>__('Username required'));
         $f['passwd']        = array('type'=>'string', 'required'=>1, 'error'=>__('Password required'));
         $f['passwd2']       = array('type'=>'string', 'required'=>1, 'error'=>__('Confirm Password'));
-        $f['prefix']        = array('type'=>'string',   'required'=>1, 'error'=>__('Table prefix required'));
-        $f['dbhost']        = array('type'=>'string',   'required'=>1, 'error'=>__('Host name required'));
-        $f['dbname']        = array('type'=>'string',   'required'=>1, 'error'=>__('Database name required'));
-        $f['dbuser']        = array('type'=>'string',   'required'=>1, 'error'=>__('Username required'));
-        $f['dbpass']        = array('type'=>'string',   'required'=>1, 'error'=>__('Password required'));
 
         $vars = array_map('trim', $vars);
+
+        //Set from envs
+        $vars['admin_email']=getenv('ADMIN_EMAIL');
+        $vars['dbhost']=getenv('DBHOST');
+        $vars['dbname']=getenv('DBNAME');
+        $vars['dbuser']=getenv('DBUSER');
+        $vars['dbpass']=getenv('DBPASS');
+        $vars['prefix']=getenv('TABLE_PREFIX');
 
         if(!Validator::process($f,$vars,$this->errors) && !$this->errors['err'])
             $this->errors['err'] = sprintf('%s — %s',
