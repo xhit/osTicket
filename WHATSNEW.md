@@ -1,3 +1,17 @@
+osTicket v1.18.4
+================
+### Security
+* security: Latest Patches 06/2026 (52c366f, 5afdf54, c54a6ac, 1e39bf1, feccb6a, 6eb6b98, 078516e, 98abb05, e52e010, fd96bba, 7bbd8ab, ba6217a, 580e1c8, b535782, 5963797, d590a97, eaebe01, b4cc092, d457c14, 5600f94, 5ff9795, 119cefe, b4ede88, 2a0c388, 6558b33)
+
+osTicket v1.18.3
+================
+### Enhancements
+* mPDF: Upgrade To v8.2.7 (39cdd2b1)
+* htmLawed: Upgrade To 1.2.15 (877adf56)
+
+### Security
+* security: Latest Patches 01/2026 (c646c8cb, d1b634a9, 6852e719, 8db4d377, 1552cfa3, d832f243)
+
 osTicket v1.18.2
 ================
 ### Improvements
@@ -20,6 +34,41 @@ osTicket v1.18
 ### Improvements
 * Database: Change Plugin Name to varchar(255) (aac546d0)
 * update: MAJOR_VERSION (3eac42e5)
+
+osTicket v1.17.8
+================
+### Security
+* security: Latest Patches 06/2026 (52c366f, 5afdf54, c54a6ac, 1e39bf1, feccb6a, 6eb6b98, 078516e, 98abb05, e52e010, fd96bba, 7bbd8ab, ba6217a, 580e1c8, b535782, 5963797, d590a97, eaebe01, b4cc092, d457c14, 5600f94, 5ff9795, 119cefe, b4ede88, 2a0c388, 6558b33)
+
+osTicket v1.17.7
+================
+### Enhancements
+* mPDF: Upgrade To v8.2.7 (39cdd2b1)
+* htmLawed: Upgrade To 1.2.15 (877adf56)
+
+### Improvements
+* join cdata table earlier (81ec2562)
+* issue: Content Management Errors (2a4fe6ad)
+* mail: SMTPUTF8 Backwards Compatibility (05b87199)
+* issue: SVG MIME Type (a6309e22)
+* Fix Banlist permission check (a7f14bf2)
+* issue: POP OAuth2 Error REGEX (10f38bd0)
+* issue: Kazakh Flag CSS (624c7171)
+* Fixing Argentinian flag (924380a9)
+* Update class.setup.php (8b6a0f05)
+* Fixes for Implicitly marking parameters as nullable (573e8496, ca13d888)
+* issue: Date Column Interval (1e38901e)
+* issue: PGP + S/MIME Mail Parsing (9aff6b03)
+* issue: Trim User Name (0fbafda1)
+* issue: Microsoft UTF-8 BOM (5074c032)
+* issue: Empty Dept Error On Topic Update (f1ba934b)
+* Fix typo in 'Add New Instance' title (ae434418)
+* Update class.file.php (1425fe1e)
+* issue: Regex OR Operator (331ca48d)
+* Revert "issue: Guest Session TTL" (c3819e4d)
+
+### Security
+* security: Latest Patches 01/2026 (c646c8cb, d1b634a9, 6852e719, 8db4d377, 1552cfa3, d832f243)
 
 osTicket v1.17.6
 ================
@@ -66,7 +115,7 @@ osTicket v1.17.6
 * update: PHP Deprecations & Warnings (84c14ace)
 * issue: User Lookup Umlaut (504b0bfb)
 * issue: Department Field User Import (5c2b6a5d)
-* Fix force-https auto-enabling on settings page (3805bbfd)
+* Fix force_https auto-enabling on settings page (3805bbfd)
 * queue: getTotal Incorrect Counts (4f137dc2)
 * issue: Referred Tickets Incorrect Queue Counts (b42cad6f)
 * php: 8.4 Support (a4c0f674, b4938b99, 5e5a9ff5, fb9a39ba)
